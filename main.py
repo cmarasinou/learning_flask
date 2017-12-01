@@ -1,7 +1,12 @@
 from flask import Flask, render_template
+from flask.ext.bootstrap import Bootstrap
+
 
 # Create an app
 app = Flask(__name__)
+
+# Initialize bootstrap
+bootstrap = Bootstrap(app)
 
 # Home route
 @app.route('/')
